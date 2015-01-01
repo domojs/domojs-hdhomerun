@@ -86,7 +86,6 @@ function registerDevices(channels)
             obj[item.name]='/api/hdhomerun/record/'+device_id+'?channel='+item.channel+'&program='+item.program;
             return obj;
         }));
-        console.log(recordChannels);
 
         Object.defineProperty(device, 'commands', {enumerable:true, get:function(){
             var commands={};
